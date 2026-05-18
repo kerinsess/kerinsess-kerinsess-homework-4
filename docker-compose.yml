@@ -1,0 +1,8 @@
+services:
+  collatz:
+    build: .
+    image: collatz-parallel
+    container_name: collatz_run
+    environment:
+      COLLATZ_N: "10000000"
+      COLLATZ_THREADS: "4"
